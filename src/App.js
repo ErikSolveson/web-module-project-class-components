@@ -25,7 +25,7 @@ class App extends React.Component {
     // debugger;
     this.setState({
       todoList: this.state.todoList.map((item) => {
-        if (itemId.id === item.id) {
+        if (itemId === item.id) {
           return {
             ...item,
             done: !item.done,
